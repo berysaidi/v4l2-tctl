@@ -1,0 +1,16 @@
+[package]
+name = "v4l2-tctl"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+
+[profile.dev]
+overflow-checks = true
+
+[dependencies]
+v4l = {version = "*", features = ["v4l2"]}
+tui = "0.19.0"
+crossterm =  "0.25"
+glob = "0.3.0"
